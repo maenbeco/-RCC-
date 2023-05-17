@@ -1,0 +1,520 @@
+@media (max-width: 1300px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+ 
+
+@media (min-width: 1300px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+
+* {
+    
+    box-sizing: border-box;
+    padding: 0 ;
+    margin: 0;
+  }
+   
+   html {
+    
+    scroll-behavior: smooth;
+   }
+    body{
+      background-color: #ddd;
+      padding: 0 ;
+     margin: 0;
+    }
+
+
+/* start Review*/
+
+  .Review .content form input[type="submit"] {
+    background-color:rgb(97, 122, 85);
+    color: rgb(238, 232, 232);
+    padding: 20px;
+    border: none;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: right;
+  }
+
+
+  input.main-input {
+    padding: 20px;
+    display: block;
+    border: 1px;
+    margin-bottom: 30px;
+    border: 0.5px solid #242121;
+
+
+  }
+
+    .Review .content form textarea.main-input {
+      width: 460px;
+      height: 204px;
+      display: block;
+      resize: none;
+      border: 0.5px solid #242121;
+
+  }
+
+
+
+h2{
+width: 90%;
+margin-top: 140px;
+}
+
+.All-Massage{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.box{
+    margin-bottom: 30px;
+}
+
+
+.comments{
+    width: 850px;
+    background: white;
+    padding: 25px;
+    margin: 12px;
+    border-radius: 10px;
+    
+
+}
+/* end  Review*/
+
+/* The Modal (background) */
+
+
+#modal {
+  left:   10px;
+  position: fixed;
+  bottom: 60px;
+  z-index: 10;
+  max-width: 300px;
+  padding: 15px 24px 18px;
+  background: #a3b3a2;
+}
+
+#modal .close-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #000;
+  border-radius: 60%;
+  justify-content: center;
+}
+
+#modal .img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+/*slideshow*/
+.slideshow {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 10px 15px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.number {
+  color: #fff;
+
+  position: absolute;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(97, 122, 85);
+  border-radius: 60%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #000000;
+  
+}
+
+
+/*start header*/
+
+
+.logo {
+  font-size: 25px;
+}
+
+nav ul li a{
+  color: rgb(97, 122, 85);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 70px;
+}
+nav ul li a:hover{
+color: #F6FFDE;
+}
+
+
+
+li  {
+padding-left: 10px; 
+list-style: none;
+display: inline-block;
+}
+
+
+header h1{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding: 25px ;
+}
+.container{
+    
+    max-width: 1300px;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container .container-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap:35px;
+    grid-row-gap: 35px;
+    width: 100%;
+}
+.container .container-items .item{
+    max-width: 270px;
+    margin: auto;
+    border: 1px solid #000000;
+    border-radius: 10mm;
+    padding: 25px;
+}
+.container .container-items .item .img-item{
+    width: 100%;
+}
+.container .container-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.container .container-items .item .item-name{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container .container-items .item .price-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    float: right;
+}
+
+
+.container .container-items .item .button-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: rgb(97, 122, 85);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.trolley{
+    border: 1px solid #666;
+    width: 40%;
+    margin-top: 35px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: auto;
+    margin-right: -100%;
+    opacity: 0;
+}
+.trolley .header-trolley{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+.trolley .trolley-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid #666;
+    padding: 25px;
+}
+.trolley .trolley-item img{
+    margin-right: 25px;
+}
+.trolley .trolley-item .trolley-item-name{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.trolley .trolley-item .selector-Amount{
+    display: inline-block;
+    margin-right: 30px;
+}
+.trolley .trolley-item .trolley-item-Amount{
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    display: inline-block;
+    width: 35px;
+    padding: 7px;
+    text-align: center;
+}
+.trolley .trolley-item .selector-Amount i{
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.trolley .trolley-item .trolley-item-price{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 10px;
+} 
+.trolley .trolley-item .btn-eliminar{
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    color: #000;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 25;
+}
+.trolley .trolley-item .btn-eliminar i{
+    pointer-events: none;
+}
+
+.trolley-total{
+    background-color: #f3f3f3;
+    padding: 35px;
+}
+.trolley-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+#myBtn{
+    display: block;
+    border: none;
+    background: #000;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.BTN-buy{
+  background-color: rgb(97, 122, 85);
+  color: rgb(238, 232, 232);
+  padding: 10px;
+
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+/*end baket*/ 
+
+
+footer{
+  background-color: #AAC8A7;
+  font-size: 18px;
+  padding: 10px  50px;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.footer li  {
+padding-left: 0px;
+
+}
+
+
+.footer-col ul li a{
+
+	 text-decoration: none;
+    font-weight: 300;
+    color: rgb(97, 122, 85);
+    display: inline-block;
+    MARGIN:  10PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.footer-col ul li a:hover{
+	color: #F6FFDE;
+	background-color:rgb(97, 122, 85);
+  
+}
+.copyrightText{
+
+ color:#000;
+ text-align: center;
+margin-top: 25px;
+
+}
+
+.footer-col .social-links{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.footer-col .social-links a{
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	text-align: center;
+	line-height: 45px;
+	border-radius: 70%;
+  color: rgb(97, 122, 85);
+  
+}
+.footer-col .social-links a:hover{
+	color: #F6FFDE;
+	background-color:rgb(97, 122, 85);
+  
+}
+.container1{
+    
+  max-width: 900px;
+  padding: 0px;
+  justify-content: space-between;
+ 
+}
+.Map{
+  margin-left: 250px;
+}
+
+li a{
+  color: rgb(97, 122, 85);
+  text-transform: uppercase;
+  font-size: 18px;
+  
+}
+
+
+.who{
+font-family: sans-serif;
+font-size: 20px;
+}
+.details{
+  align-items: center;
+  justify-content: left;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.product{
+ 
+  width: 1050px;
+  margin-left: 50px;
+  box-sizing: border-box;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*search*/
+input[type=text] {
+  width: 150px;
+  font-size: 16px;
+  background-position: 15px 10px; 
+  padding: 15px 25px 15px 55px;
+  -webkit-transition : width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+/*end serch*/

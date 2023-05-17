@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viweport" content="width=device-width,intial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title> Retail Camping Company (RCC)</title>
+   
+    <div class="logo">Retail Camping Company</div>
+    <nav>
+      <ul>
+       <LI><a href="index.html">Home</a></LI>
+       <LI><a href="Camping equipment.html">Camping equipment</a></LI>
+       <LI><a href="furnitures.html">furnitures</a></LI>
+       <LI><a href="Offers and package.html">Offers and package</a></LI>
+       <LI><a href="Reviews.html">Reviews</a></LI>
+       <LI><a href="Basket.html"><i class="fa-solid fa-cart-shopping fa-bounce"></i></a></LI>
+       <form>
+        <input type="text" name="search" placeholder="Search">
+      </form>
+      
+      </ul>
+    </nav>
+</head>
+
+<body>
+ <!-- start slideshow-->
+ 
+ 
+ <div class="slideshow">
+ 
+ <div class="Slides fade">
+   <div class="number">1 / 4</div>
+   <img src="img/s-photo1 .webp" style="width:100%">
+ </div>
+ 
+ <div class="Slides fade">
+   <div class="number">2 / 4</div>
+   <img src="img/s-photo2 .webp" style="width:100%">
+ </div>
+ 
+ <div class="Slides fade">
+   <div class="number">3 / 4</div>
+   <img src="img/s-photo3.jpeg" style="width:100%">
+ </div>
+
+ <div class="Slides fade">
+  <div class="number">4 / 4</div>
+  <img src="img/s-photo4.jpg" style="width:100%">
+</div>
+ 
+ </div>
+ <br>
+ 
+ <div style="text-align:center">
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+
+ </div>
+  
+<!--end slideshow-->
+<div class="who">
+<h2> Who Are We </h2>
+<pre>  We are a company that provides the best products for camping,
+   the company was established in 2019. 
+   Our products are divided into camping purposes
+    and camping-related furnishings, 
+   and we also have permanent weekly offers.</pre>
+
+
+<h2>Our product</h2>
+
+<div class="details">  <div class="product">
+  <img src="img/who.3.jpg" style="width: 80%;">
+</div>
+<pre> In the Camping equipment section,
+   you can see that we have enough 
+   for you to go for any camping trip, 
+   and the quality of the products is among the best.
+   You can see them <a href="Camping equipment.html">from here.</a>
+  </pre>
+</div>
+
+
+
+
+  <div class="details"><div class="product">
+    <img src="img/who.2.jpg" style="width: 80%;">
+  </div>
+<pre> And in the Furniture section, 
+provide you with the best comfort in 
+terms of quality and in terms of prices. 
+You can see them <a href="Furniture.html">from here.</a>
+</pre>
+</div>
+
+
+
+
+<div class="details"><div class="product">
+  <img src="img/who.1.jpg" style="width: 80%;">
+</div>
+<pre>  We have offers at the best level, 
+  as our offers are not only single products. 
+  We also have packages. You can see them<a href="Offers and package.html">from here.</a>
+</pre>
+</div>
+
+
+ 
+</div>
+<!--START POP UP-->
+
+<div id="modal" style="display: block;">
+
+<button id="close-button" onclick="close-modal"><i class="fa fa-times"></i></button>
+   <br>
+  <div class="image">
+    <img class="img" src="img/Grill 1.jpg" alt="img">
+  <div class="title">
+    <p><LI><a href="Offers and package.html">CHECK OUR NEW OFFERS</a></LI></p>
+  </div>
+  </div>
+   </div>
+  
+ </div>
+  
+ </div>
+  
+ <script>
+  
+  let modal = document.getElementById('modal');
+  
+   document.getElementById('close-button').addEventListener('click', closemodal);
+  
+  
+  
+  
+   function showmodal() {
+  
+ myModal.style.display = "block";
+  
+  }
+  
+  setTimeout(showmodal, 6000)
+  
+  
+  
+  
+ function closemodal() {
+  
+  modal.style.display = "none";
+  
+}
+  
+</script>
+<!--END POP UP-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ <!--start footer-->
+  <footer>
+   <div class="container1">
+     <div class="footer-col">
+      <div class="social-links">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <ul>
+                  <LI><a href="Home.html">Home</a></LI>
+                  <LI><a href="Camping equipment.html">Camping equipment</a></LI>
+                  <LI><a href="Furniture.html">Furniture</a></LI>
+                  <LI><a href="Offers and package.html">Offers and package</a></LI>
+                  <LI><a href="Reviews.html">Reviews</a></LI>
+                 </ul>
+                 <div class="Map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d461642.04164849484!2d56.16939373369344!3d25.318363495209965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f5fede7964b%3A0x2a830aa19c1f6d89!2z2KfZhNi02KfYsdmC2KkgLSDYpdmF2KfYsdipINin2YTYtNin2LHZgtip2ZE!5e0!3m2!1sar!2sae!4v1683668670841!5m2!1sar!2sae" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                 <button onclick="getLocation()">Get Location</button>
+                 <div id="map"></div>
+                 <script>
+                     function getLocation() {
+                         if (navigator.geolocation) {
+                             navigator.geolocation.getCurrentPosition(showPosition);
+                         } else {
+                             alert("Geolocation is not supported by this browser.");
+                         }
+                     }
+                     function showPosition(position) {
+                         var lat = position.coords.latitude;
+                         var lon = position.coords.longitude;
+                         var map = new google.maps.Map(document.getElementById('map'), {
+                             center: { lat: lat, lng: lon },
+                             zoom: 8
+                         });
+                     }
+                 </script>
+                </div>
+            <div class="copyrightText"><p class="copyright">&copy; 2023 <span>maen</span> All Right Reserved</p></div>
+      </div>
+    </div>
+
+  </footer>
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("Slides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000);
+  }
+
+  </script>
+
+</body>
+</html>
